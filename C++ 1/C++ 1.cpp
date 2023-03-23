@@ -5,38 +5,148 @@
 
 int main()
 {
-    int a = 1;
-    int b = 2;
-    std::cout << a + b;
-    std::cout << "\n";
+    /* int a = 1;
+     int b = 2;
+     std::cout << a + b;
+     std::cout << "\n";
 
-    float f = 1.2;
-    float g = 3.9;
+     float f = 1.2;
+     float g = 3.9;
 
-    std::cout << f + g;
-    
-    bool c1 = true;
-    std::cout << c1;
-    std::cout << "\n";
+     std::cout << f + g;
 
-    bool c2 = false;
-    std::cout << c2;
-    std::cout << "\n";
+     bool c1 = true;
+     std::cout << c1;
+     std::cout << "\n";
 
-    char d = 'a';
-    std::cout << d;
-    std::cout << "\n";
+     bool c2 = false;
+     std::cout << c2;
+     std::cout << "\n";
 
-    char e = 'b';
-    std::cout << e;
-    std::cout << "\n";
+     char d = 'a';
+     std::cout << d;
+     std::cout << "\n";
 
-    std::string str1 = "안녕";
-    std::cout << str1;
-    std::cout << "\n";
+     char e = 'b';
+     std::cout << e;
+     std::cout << "\n";
 
-    std::string str2 = "반갑습니다";
-    std::cout << str2;
+     std::string str1 = "안녕";
+     std::cout << str1;
+     std::cout << "\n";
+
+     std::string str2 = "반갑습니다";
+     std::cout << str2;
+
+     std::string test3 = "포스코";
+     test3 = "코딩온";
+     std::cout << test3;*/
+
+     //int a;
+     //std::string b;
+
+     //std::cin >> a;
+     //std::cin >> b;
+
+
+     //std::cout << a<<b; //+:타입이 다른 두 개의 변수를 연결해서 오류가 뜬다
+
+     /*std::string name = "이름을 입력하세요";
+     std::cout << name;
+     std::cout << "\n";
+     std::cin >> name;
+
+     std::string age = "나이를 입력하세요";
+     std::cout << age;
+     std::cout << "\n";
+     std::cin >> age;
+
+     std::string hello = "안녕하세요" + name +"(님)"+"("+age+"세)";
+     std::cout << hello;*/
+
+     /* int a = 5;
+
+      if (a > 10) {
+          std::cout << "a가 10보다크다";
+      }
+      else if(a==5){
+          std::cout << "a가5다";
+      }
+      else {
+          std::cout << "a는 10보다 크지 않고 5가 아닙니다";
+      }
+       */
+
+       /*std::cout << "나이를 입력하세요";
+       std::cout << "\n";
+
+       int age;
+       std::cin >> age;
+
+       if (1 < age && age<7) {
+           std::cout << "유아";
+       }
+       else if (age < 14) {
+           std::cout << "초등학생";
+       }
+       else if (age < 17) {
+           std::cout << "중학생";
+       }
+       else if (age < 19) {
+           std::cout << "고등학생";
+       }
+       else if (20<age) {
+           std::cout << "성인입니다.";
+       }
+       else if (age >= 200) {
+           std::cout << "나이가 너무 많습니다";
+       }*/
+
+    /*std::cout << "이름을 입력하세요";
+    std::string name;
+    std::cin >> name;
+
+    if (name == "홍길동") {
+        std::cout << "남자입니다";
+    }
+    else if (name == "성춘향") {
+        std::cout << "여자입니다";
+    }
+    else {
+        std::cout << "모르겠어요";
+    }*/
+  /* int number;
+
+   std::cout << "숫자를 입력하세요";
+   std::cin >> number;
+
+   number % 5 == 0 ? std::cout << "5의배수입니다" : std::cout << "5의배수가아닙니다";*/
+
+int num1;
+int num2;
+std::string c;
+
+std::cout << "첫번째숫자를 입력하세요";
+std::cin >> num1;
+
+std::cout << "두번째숫자를 입력하세요";
+std::cin >> num2;
+
+std::cout << "연산자를 선택하세요 +,-,*,%";
+std::cin >> c;
+
+if (c == "+") {
+    std::cout << num1 + num2;
+}
+else if (c == "-") {
+    std::cout << num1 - num2;
+}
+else if (c == "*") {
+    std::cout << num1 * num2;
+}
+else if (c == "%") {
+    std::cout << num1 % num2;
+}
 
 }
 

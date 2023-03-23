@@ -1,4 +1,2 @@
 ﻿  C++ 1.cpp
-C:\git\KDT-SF-2nd\C++ 1\C++ 1.cpp(13,18): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\git\KDT-SF-2nd\C++ 1\C++ 1.cpp(14,18): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-  C++ 1.vcxproj -> C:\git\KDT-SF-2nd\C++ 1\x64\Debug\C++ 1.exe
+LINK : fatal error LNK1168: C:\git\KDT-SF-2nd\C++ 1\x64\Debug\C++ 1.exe을(를) 쓰기용으로 열 수 없습니다.
