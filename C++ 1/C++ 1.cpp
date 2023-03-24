@@ -5,42 +5,29 @@
 
 int main()
 {
-    /* int a = 1;
+     /*int a = 1;
      int b = 2;
      std::cout << a + b;
      std::cout << "\n";
-
+     
      float f = 1.2;
      float g = 3.9;
-
      std::cout << f + g;
 
      bool c1 = true;
+     bool c2 = false;
      std::cout << c1;
      std::cout << "\n";
-
-     bool c2 = false;
-     std::cout << c2;
-     std::cout << "\n";
-
+    
      char d = 'a';
+     char e = 'b';
      std::cout << d;
      std::cout << "\n";
-
-     char e = 'b';
-     std::cout << e;
-     std::cout << "\n";
-
+    
      std::string str1 = "안녕";
-     std::cout << str1;
-     std::cout << "\n";
-
      std::string str2 = "반갑습니다";
-     std::cout << str2;
-
      std::string test3 = "포스코";
-     test3 = "코딩온";
-     std::cout << test3;*/
+     test3 = "코딩온";*/
 
      //int a;
      //std::string b;
@@ -115,38 +102,82 @@ int main()
     else {
         std::cout << "모르겠어요";
     }*/
-  /* int number;
+  /*int number;
 
    std::cout << "숫자를 입력하세요";
    std::cin >> number;
 
    number % 5 == 0 ? std::cout << "5의배수입니다" : std::cout << "5의배수가아닙니다";*/
 
-int num1;
-int num2;
-std::string c;
+//int num1;
+//int num2;
+//std::string c;
+//
+//std::cout << "첫번째숫자를 입력하세요";
+//std::cin >> num1;
+//
+//std::cout << "두번째숫자를 입력하세요";
+//std::cin >> num2;
+//
+//std::cout << "연산자를 선택하세요 +,-,*,%";
+//std::cin >> c;
+//
+//if (c == "+") {
+//    std::cout << num1 + num2;
+//}
+//else if (c == "-") {
+//    std::cout << num1 - num2;
+//}
+//else if (c == "*") {
+//    std::cout << num1 * num2;
+//}
+//else if (c == "%") {
+//    std::cout << num1 % num2;
+//}
 
-std::cout << "첫번째숫자를 입력하세요";
-std::cin >> num1;
+//std::cout << "점수를 입력하세요";
+//std::cout << "\n";
+//
+//int score;
+//std::cin >> score;
 
-std::cout << "두번째숫자를 입력하세요";
-std::cin >> num2;
+//if (0 < score && score <= 25) {
+//    std::cout << "d반 입니다";
+//}
+//else if (score <= 50) {
+//    std::cout << "c반 입니다";
+//}
+//else if (score <= 75) {
+//    std::cout << "b반 입니다";
+//}
+//else if (score <= 100) {
+//    std::cout << "a반 입니다";
+//}
+//else {
+//    std::cout << "올바른 점수를 입력하세요";
+//}
 
-std::cout << "연산자를 선택하세요 +,-,*,%";
-std::cin >> c;
+//std::cout << "메뉴를 선택하세요. 1,2,3";
+//
+//std::cout << "\n";
+//int c;
+//std::cin >> c;
+//
+//switch (c)
+//{ case 1:
+//    std::cout << "1번 메뉴 선택하셨습니다";
+//    break;
+//case 2:
+//    std::cout << "2번 메뉴 선택하셨습니다";
+//    break;
+//case 3:
+//    std::cout << "3번 메뉴 선택하셨습니다";
+//    break;
+//default:
+//    std::cout << "1,2,3중에 고르세요";
+//    break;
+//}
 
-if (c == "+") {
-    std::cout << num1 + num2;
-}
-else if (c == "-") {
-    std::cout << num1 - num2;
-}
-else if (c == "*") {
-    std::cout << num1 * num2;
-}
-else if (c == "%") {
-    std::cout << num1 % num2;
-}
 
 }
 
