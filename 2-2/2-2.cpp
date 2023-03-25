@@ -10,10 +10,13 @@ int minus(int num1, int num2);
 int multiple(int num1, int num2);
 float divide(int num1, int num2);
 void odd(int num1);
+int big(int num1, int num2, int num3);
 
 int main()
 {
 	int num1;
+	int num2;
+	int num3;
 	/*int num2;
 	std::string a;
 
@@ -46,8 +49,12 @@ int main()
 	
 	std::cout << "수를 입력하세요";
 	std::cin >> num1;
+	std::cin >> num2;
+	std::cin >> num3;
 
-	 odd(num1);
+	big(num1, num2, num3);
+
+	 //odd(num1);
 }
 
 int add(int num1,int num2) {
@@ -89,6 +96,21 @@ void odd(int num1) {
 	{
 		std::cout << "홀수입니다.";
 	}
+}
+
+int big(int num1,int num2, int num3){
+	if (num1>num2 && num1>num3)
+	{
+		std::cout << num1 << "이가장크다";
+	}
+	else if (num2 > num1 && num2 > num3) {
+		std::cout << num2 << "이가장크다";
+	}
+	else if (num3 > num1 && num3 > num2) {
+		std::cout << num3 << "이가장크다";
+	}
+
+	return 0;
 }
 
 
