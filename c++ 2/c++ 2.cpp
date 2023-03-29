@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+
+
 int main()
 {
     /*for(int i=0;i<5; i++){
@@ -61,7 +63,7 @@ int main()
 
     std::cout << num1;;*/
 
-   /* int i = 1;
+    int i = 1;
     int j = 1;
     while (i<=9)
     {
@@ -75,7 +77,7 @@ int main()
         i++;
         
         std::cout << "\n";
-    }*/
+    }
 
 
     test_1();

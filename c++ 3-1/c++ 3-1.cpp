@@ -47,7 +47,7 @@ int main()
 	//	std::cout << "\n";
 	//}
 
-	//int num2[3] = { 1,2,3 };
+	int num2[3];
 
 	//for (auto n : num2) {      //for(변수:배열)
 	//	std::cout << n << " ";
@@ -68,6 +68,8 @@ int main()
 	//     }
 	//	std::cout << std::endl;
 	//}
+
+
 
 	/*std::string city[5] = { "한국","일본","중국","미국","러시아" };
 	std::string city2[5];
@@ -104,42 +106,46 @@ int main()
 
 	std::cout << "평균 점수는:"<< (float)total/(float)5;*/
 
-	int score[2][3];
+	int score[3][3];
 
-	/*for (int i = 0; i < 3; i++)
-	{
-		std::cout << i+1 <<"번 째 학생의 국어점수 수학점수를  받으시오";
-		for (int i = 0; i < 2; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			std::cin >> score[i][j];
-			std::cin >> score[i][j];
-		}
-
-	}
-	}*/
-
-	
-
-
-
-	int korea[3];
-	int math[3];
-	int total1 = 0;
-	int total2 = 0;
 	for (int i = 0; i < 3; i++)
 	{
-		std::cout << i + 1 << "번 째 학생의 국어 수학 점수를 입력하세요";
-		std::cin >> korea[i];
-		std::cin >> math[i];
-
-		total1 += korea[i];
-		total2 += math[i];
+		std::cout << i + 1 << "번째 학생의 영어 점수:";
+		std::cin >> score[i][0];
+		std::cout << i + 1 << "번째 학생의 수학 점수:";
+		std::cin >> score[i][1];
+		std::cout << i + 1 << "번째 학생의 국어 점수:";
+		std::cin >> score[i][2];
 	}
+	int engtotal;
 
-	std::cout << "국어 평균 점수는:" << (float)total1 / 3;
-	std::cout << "수학 평균 점수는:" << (float)total2 / 3;
+	for (int i = 3; i < 3; i++) {
+		engtotal += socre[i][0];
+	}
+	int engave = (float)engtotal / 3;
+
+	int mathtotal;
+	for (int i = 3; i < 3; i++) {
+		mathtotal += socre[i][1];
+	}
+	int mathevg = (float)mathtotal / 3;
+
+	int kototal;
+	for (int i = 3; i < 3; i++) {
+		kototal += socre[i][2];
+	}
+	int koevg = (float)kototal / 3;
+
+	std::cout << "영어 평균점수:" << engave<<std::endl;
+	std::cout << "수학 평균점수:" << mathevg << std::endl;
+	std::cout << "국어 평균점수:" << koevg << std::endl;
+
+	std::cout << i + 1 << "번째 학생의 영어 점수:";
+
+}
+}
+
+
 
 }
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
