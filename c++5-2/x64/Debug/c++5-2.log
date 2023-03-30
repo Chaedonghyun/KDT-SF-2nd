@@ -1,0 +1,4 @@
+﻿  c++5-2.cpp
+C:\git\KDT-SF-2nd\c++5-2\c++5-2.cpp(32,12): warning C4101: 'h' :참조되지 않은 지역 변수입니다.
+C:\git\KDT-SF-2nd\c++5-2\c++5-2.cpp(32,9): warning C4101: 'w' :참조되지 않은 지역 변수입니다.
+  c++5-2.vcxproj -> C:\git\KDT-SF-2nd\c++5-2\x64\Debug\c++5-2.exe
