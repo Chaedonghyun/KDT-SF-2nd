@@ -71,7 +71,9 @@ int main()
 					line += tel_in;
 					is_modify = true;
 				}
-				else line += tel;
+				else { 
+					line += tel; 
+				}
 				member_tel_temp += line + "\n";
 			}
 			member_tel_file_r.close();
