@@ -1,0 +1,4 @@
+﻿  C++0401-3.cpp
+C:\git\KDT-SF-2nd\C++0401-3\C++0401-3.cpp(82,15): warning C4156: 'delete' 배열 형식을 사용하지 않고 배열 식을 삭제했습니다. 배열 형식이 대체됩니다.
+C:\git\KDT-SF-2nd\C++0401-3\C++0401-3.cpp(82,15): warning C4154: 배열 식을 삭제했습니다. 포인터로 변환이 제공됩니다.
+  C++0401-3.vcxproj -> C:\git\KDT-SF-2nd\C++0401-3\x64\Debug\C++0401-3.exe
