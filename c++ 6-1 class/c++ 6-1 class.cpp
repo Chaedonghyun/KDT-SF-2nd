@@ -49,13 +49,11 @@ using namespace std;
 class Rectangel
 {
 	int width, height;
-
-
+	
 public:
-	/*Rectangel() {
-		this->width = width;
-		this->height = height;
-	}*/
+	Rectangel() {
+		
+	}
 
 	int getWidth(){
 		return width;
@@ -93,7 +91,7 @@ int main()
 	cin >> width;
 	cin >> height;
 	
-	Rectangel r2;
+	Rectangel r2=Rectangel();
 
 	r2.setwidth(width);
 	r2.setheight(height);

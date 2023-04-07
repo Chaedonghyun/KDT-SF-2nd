@@ -104,31 +104,31 @@ public:
 
 };
 
-class Person
-{
-public:
-	Person() { cout << "생성자 입니다."; };
-	//~Person() { cout << "소멸자 입니다."; };//소멸자
-	//가상함수:부모클래스에서 정의될 예정
-	//자식 함수가 재정의(오버라이딩)할 것이라고 기대하는 함수
-	//순수 가상함수:구현이 안되어 있는 함수(=0)
-	virtual void sleep() = 0;
-	virtual void sleep() { //가상 함수:동적 바인딩을 하기 위해서
-		cout << "sleep";
-	}
-private:
-
-};
-
-class Student :public Person {
-
-
-};
+//class Person
+//{
+//public:
+//	Person() { cout << "생성자 입니다."; };
+//	//~Person() { cout << "소멸자 입니다."; };//소멸자
+//	//가상함수:부모클래스에서 정의될 예정
+//	//자식 함수가 재정의(오버라이딩)할 것이라고 기대하는 함수
+//	//순수 가상함수:구현이 안되어 있는 함수(=0)
+//	//virtual void sleep() = 0;
+//	virtual void sleep() { //가상 함수:동적 바인딩을 하기 위해서
+//		cout << "sleep";
+//	}
+//private:
+//
+//};
+//
+//class Student :public Person {
+//
+//
+//};
 
 
 int main()
 {
-	//Person p = Person();  Person에 추상메서드가 있어서 객채화를 할 수 없다. 
+	//Person p = Person();  //Person에 추상메서드가 있어서 객채화를 할 수 없다. 
 	/*Student s = Student();
 	s.eat();
 	s.sleep();*/
@@ -145,16 +145,19 @@ int main()
 
 	Snack* snackBasket[4] = { new Candy("딸기"),new Candy("초코"),new Chocolate("둥근"),new Chocolate("네모난") };
 
-	delete candy1;
+	
 
 	for (int i = 0; i <4; i++)
 	{
 		snackBasket[i]->buy();
 		snackBasket[i]->eat();
 	}
+
+  
+	
 	//Candy* candy = (Candy*)snackBasket[0];
 	//candy->buy();
-
+  //delete snackBasket;
 	//클래스는 필드, 메서드, 생성자, 소멸자로 구성됨
 	//소멸자:객체가 소멸될 때 자동으로 실행되는 메서도
 

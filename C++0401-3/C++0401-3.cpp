@@ -1,85 +1,86 @@
 ﻿
 #include <iostream>
+#include<vector>
 using std::cout;
 using std::cin;
 using std::string;
 using std::endl;
 
-
-class Snack {
-protected:
-	int price;
+class Snack
+{protected:
 	string name;
-	string label;
-
-
+	string brand;
+	int price;
 public:
-	Snack(int price, string name, string label) {
-		this->price = price;
+	Snack(string name, string brand, int price) {
 		this->name = name;
-		this->label = label;
+		this->brand = brand;
+		this->price = price;
 	}
 
 	virtual void buy() {
-		cout << name << price << label << "사탕을 사다\n";
+		//cout << flavor << "맛 " << name << brand << price << "사탕을 사다";
 	}
-
+	
 	virtual void eat() {
-		cout << name << price << label << "사탕을 먹다\n";
+
 	}
 
 };
 
-class Candy : public Snack {
+class Candy :public Snack {
 	string flavor;
 public:
-	Candy(string flavor) :Snack(500, "춥파츕스", "롯데제과") {
+	Candy(string flavor, string name,string brand, int price) :Snack(name, brand, price) {
 		this->flavor = flavor;
+		this->name = name;
+		this->brand = brand;
+		this->price = price;
 	}
 
 	void buy() {
-		cout << flavor<<"맛" << name <<"를 " << price <<"에 " << label << "사탕을 사다\n";
+		cout << flavor << "맛 " << name << brand << price << "사탕을 사다";
 	}
 
 	void eat() {
-		cout << flavor<<"맛" << name <<"를 " << price << "에 " << label << "사탕을 먹다\n";
-	}
-
-};
+		cout << flavor << "맛 " << name << brand << price << "사탕을 먹다";
+	}};
 
 class Chocolate :public Snack {
-	string share;
+	string shape;
 public:
-	Chocolate(string share) :Snack(800, "가나", "롯데제과") {
-		this->share = share;
-
+	Chocolate(string shape, string name, string brand, int price) :Snack(name, brand, price) {
+		this->shape = shape;
+		this->name = name;
+		this->brand = brand;
+		this->price = price;
 	}
 
 	void buy() {
-		cout <<share<<"모양" << name << price << label << "초콜릿을 사다\n";
+		cout << shape << "모양 " << name << brand << price << "초콜릿을 사다";
 	}
 
 	void eat() {
-		cout << share<< "모양" << name << price << label << "초콜릿을 먹다\n";
+		cout << shape << "모양 " << name << brand << price << "초콜릿을 먹다";
 	}
 
 };
+
 
 int main()
 {
-	//Snack* snack = new Candy("딸기"); 업캐스팅
-	//Candy* candy = (Candy*)snackBasket[0]; 다운캐스팅
-
-
-	Snack* Basket[2] = { new Candy("딸기"), new Chocolate("별") };
-
+	string flavor;
+	string name;
+	string brand;
+	int price=0;
+	string shape;
+	Snack* arr[2] = { new Candy("딸기","춥파","롯데",500),new Candy("초코","춥파","해테",800)};
+	
 	for (int i = 0; i < 2; i++)
 	{
-		Basket[i]->buy();
-		Basket[i]->eat();
+		arr[i]->buy();
+		arr[i]->eat();
 	}
 
-	delete Basket;
-  
 }
 

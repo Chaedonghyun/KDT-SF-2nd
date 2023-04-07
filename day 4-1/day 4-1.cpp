@@ -50,7 +50,7 @@ int main()
     //}
 
     
-   /* int x;
+    int x;
     int y;
     int sum = 0;
    
@@ -74,7 +74,7 @@ int main()
             std::cout << sum << " ";
         }
         std::cout << "\n";
-    }*/
+    }
 
     /*int score=1;
     int sum=0 ;

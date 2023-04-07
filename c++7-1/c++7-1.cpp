@@ -56,9 +56,6 @@ int main()
     Person p = Person(name,55);//p는 객체
     
     Student s = Student("ehdgus", 18, "ehd");
-
-    
-
     s.study();
     p.sleep();
 

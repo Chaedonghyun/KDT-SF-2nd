@@ -64,15 +64,12 @@ public:
 		cout << monster << "를 공격합니다";
 	}
 	
-
-	
-
-
+	/*void levelUp() {
+		cout << "레벨업!";
+		++level;
+	}*/
 };
-class character2 {
-	string people;
 
-};
 
 
 int main()
@@ -107,7 +104,6 @@ int main()
 			cout << "새이름을 입력해주세요:\n";
 			cin >> name;
 			c.setName(name);
-			
 		}
 		else if (num==2)
 		{
