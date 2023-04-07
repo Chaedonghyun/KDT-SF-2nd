@@ -8,19 +8,11 @@ using std::string;
 
 int main()
 {
-    srand(time(NULL));
+    
 
     int num = 0;
     int num2 = 0;
-    // for (int i = 0; i < 6; i++)
-    // {
-    //  int randomNumber = rand(); //0~32767 사이의 랜덤한 숫자
 
-    // int num = randomNumber % 45 + 1; //범위
-    // 
-    //// cout << randomNumber << endl;;
-    // cout << num<< " ";
-    // }
     while (true)
     {
         cout << "개수를 입력하세요";
@@ -35,9 +27,9 @@ int main()
                 cout << ++num2 << endl;
             }
             int randomNuber = rand();
-            int number = randomNuber % 3 + 1;
+            int number = randomNuber % 3 + 1; //컴퓨터가 1~3사이의 숫자를 부름
             cout << "컴퓨터가 부른 숫자:" << endl;
-            if (num2 < 31)
+            if (num2 < 31)                
             {
                 for (int i = 0; i < number; i++)
                 {

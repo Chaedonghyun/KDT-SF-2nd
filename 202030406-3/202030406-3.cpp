@@ -18,13 +18,13 @@ int main()
 	{
         int randomNumber = rand();
 		int num = randomNumber % 25 + 1;
-		for (int i = 0; i < count; i++)
+		for (int i = 0; i < count; i++) 
 		{
 			if (v1[i] == num) {
-				equal = true;
+				equal = true;   //겹치는 순간 제외
 			}
 		}
-		if (equal==false)
+		if (equal==false) //겹치지 않으면 v1에 들어간다
 		{
           v1.push_back(num);
 		  count++;
@@ -84,9 +84,8 @@ int main()
 		}
 	}
 
-	/*cout << "맞힌갯수:" << correct;*/
 
-	switch (correct)
+	switch (correct)   //맞힌개수
 	{ 
 	case 1:
 		cout << "7등입니다";
@@ -109,8 +108,11 @@ int main()
 	case 7:
 		cout << "1등입니다";
 		break;
+	default:
+		cout << "꽝입니다";
 	}
-
+	
+	
 
 
 		
