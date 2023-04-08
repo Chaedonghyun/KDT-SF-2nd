@@ -67,7 +67,7 @@ int main()
 		}
 		
 		
-	if (choiceNum[0]==choiceNum[1]|| choiceNum[1]==choiceNum[2]) //입력값중에 중복 확인
+	    if (choiceNum[0]==choiceNum[1]|| choiceNum[1]==choiceNum[2]) //입력값중에 중복 확인
 	    {
 				correct2 = true;
 			}
@@ -82,8 +82,6 @@ int main()
 			continue;
 		}
 
-		
-		
 		
 		for (int i = 0; i < 3; i++)      //볼+스트라이크 통합해서 갯수를 구함
 		{
