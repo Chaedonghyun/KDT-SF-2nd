@@ -20,9 +20,9 @@ int main()
         if (num > 3)
         {
             cout << "1~3 사이의 수를 입력하세요";
+            continue;
         }
-        else
-        {
+       
             for (int i = 0; i < num; i++) {
                 cout << ++num2 << endl;
             }
@@ -41,7 +41,7 @@ int main()
             
 
        
-        }
+        
 
         
 

@@ -56,15 +56,18 @@ int main()
 		{
           cin >> num;
 		  choiceNum.push_back(num);
-		}
-		
-		for (int i = 0; i < 3; i++)
-		{
-			if (choiceNum[i] > 9 || choiceNum[i] < 1) { //입력값에 0~9를 넘어가면 종료
+            
+		  
+		  if (choiceNum[i] > 9 || choiceNum[i] < 1) { //입력값에 0~9를 넘어가면 종료
 				end = false;  
 				break;
 			}
+
 		}
+		
+		
+			
+		
 		
 		
 	    if (choiceNum[0]==choiceNum[1]|| choiceNum[1]==choiceNum[2]) //입력값중에 중복 확인

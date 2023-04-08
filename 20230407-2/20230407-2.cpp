@@ -16,20 +16,10 @@ public:
         
     }
 
-    virtual int add() {
+    virtual int calculate() {
         return 0;
     }
-    virtual int minus() {
-        return 0;
-    }
-
-    virtual int mult() {
-        return 0;
-    }
-
-    virtual int divide() {
-        return 0;
-    }
+    
     static int get_Result() {
         return result;
     }
@@ -44,7 +34,7 @@ public:
         this->num2 = num2;
         
     }
-    int add() {
+    int calculate() {
         cout <<"결과:" << num + num2 << endl;
         return Operate::result=num+num2;
     }
@@ -59,7 +49,7 @@ public:
         this->num2 = num2;
     }
 
-    int minus() {
+    int calculate() {
         cout << "결과:" << num - num2 << endl;
         return Operate::result = num - num2;
     }
@@ -73,7 +63,7 @@ public:
         this->num2 = num2;
     }
 
-    int  mult() {
+    int  calculate() {
         cout << "결과:" << num * num2 << endl;
         return Operate::result = num * num2;
     }
@@ -87,7 +77,7 @@ public:
         this->num2=num2;
     }
 
-    int divide() {
+    int calculate() {
         cout << "결과:" << (float)num / (float)num2 << endl;
         return Operate::result = (float)num / (float)num2;
     }
@@ -129,22 +119,22 @@ int main()
         if (s == "+")
         {
             Operate* c = new Add(num, num2);
-            c->add();
+            c->calculate();
             
         }
         else if (s == "-") {
             Operate* c = new Minus(num, num2);
-            c->minus();
+            c->calculate();
 
         }
         else if (s == "*")
         {
             Operate* c = new Multiply(num, num2);
-            c->mult();
+            c->calculate();
         }
         else if (s == "/") {
             Operate* c = new Divide(num, num2);
-            c->divide();
+            c->calculate();
         }
         else
         {
